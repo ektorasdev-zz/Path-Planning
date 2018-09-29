@@ -1,5 +1,15 @@
 # CarND-Path-Planning-Project
 Self-Driving Car Engineer Nanodegree Program
+
+### Project Reflection
+
+The implementation of the project is based on the project walkthrough from the classroom and my implementation is from the line 
+258 to 307. The project consists from the following: 
+
+## 1. Prediction
+Between lines 258 and 286 we analyze the position of the cars on our side of the road, including our vehicle too. Then based on the results, between lines 289 to 307 we apply the appropriate lane change based on the other cars position and we apply either a left or right shift or we slow down if we are blocked from all sides. If we are either on the left or right lane and there are no cars around we return to the center lane.
+
+## 2. Trajectory
    
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2).
