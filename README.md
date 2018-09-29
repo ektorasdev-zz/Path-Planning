@@ -14,7 +14,7 @@ Between lines 258 and 286 we analyze the position of the cars on our side of the
 
 Between lines 309 and 396, our vehicle first calculates the trajectory based on the lane decisions made before, the position and any previous paths. Then based on the transformed coordinates (from car to local) we get from lines 359 and 360, we apply the spline calculation, which will provide us with the appropriate transition.
 
-### -------------------------- ###
+### -------------------------------------------------------------- ###
    
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2).
