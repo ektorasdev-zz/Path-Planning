@@ -249,8 +249,6 @@ int main() {
           	vector<double> next_x_vals;
           	vector<double> next_y_vals;
 
-
-          	// TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
             int prev_size = previous_path_x.size();
 
             if (prev_size > 0) {
@@ -276,11 +274,11 @@ int main() {
                     if ((check_car_s >= 30) && (check_car_s-car_s < 30)) {
                         car_too_close = true;
                     }
-                } else if (lane < 2 && d < (2+4*(lane + 1)+2) && d > (2+4*(lane + 1)-2)) {
+                } else if (lane < 2 && d < (2+4*(lane+1)+2) && d > (2+4*(lane+1)-2)) {
                     if (((car_s - 30) < check_car_s) && ((car_s + 30) > check_car_s)) {
                         car_right_side = true;
                     }
-                } else if (lane > 0 && d < (2+4*(lane - 1)+2) && d > (2+4*(lane - 1)-2)) {
+                } else if (lane > 0 && d < (2+4*(lane-1)+2) && d > (2+4*(lane-1)-2)) {
                     if (((car_s - 30) < check_car_s) && ((car_s + 30) > check_car_s)) {
                         car_left_side = true;
                     }
