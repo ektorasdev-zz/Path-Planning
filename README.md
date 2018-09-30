@@ -3,6 +3,8 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Project Reflection
 
+Path planning video: https://youtu.be/UGdmMS_dE2Q
+
 The implementation of the project is based on the project walkthrough from the classroom and my implementation is from the line 
 258 to 307. The project consists from the following: 
 
