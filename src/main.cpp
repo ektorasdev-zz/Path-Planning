@@ -271,7 +271,7 @@ int main() {
                 check_car_s += ((double)prev_size*0.02*check_speed);
 
                 if (d < (2+4*lane+2) && d > (2+4*lane-2)) {
-                    if ((check_car_s >= 30) && (check_car_s-car_s < 30)) {
+                    if ((check_car_s >= car_s) && (check_car_s-car_s < 30)) {
                         car_too_close = true;
                     }
                 } else if (lane < 2 && d < (2+4*(lane+1)+2) && d > (2+4*(lane+1)-2)) {
